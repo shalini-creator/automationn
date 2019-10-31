@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="test.ValidateMyAccountPage"/>
+      <class name="test.ValidateHotelSearch"/>
+      <class name="test.ValidateLoginPage"/>
+      <class name="test.ValidateSignUpPage"/>
+      <class name="myproj.Qtproject.AppTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="test.ValidateMyAccountPage">
+        <methods>
+          <include name="logs"/>
+          <include name="preconditions"/>
+          <include name="validatemyaccountPage"/>
+        </methods>
+      </class> <!-- test.ValidateMyAccountPage -->
+      <class name="test.ValidateSignUpPage">
+        <methods>
+          <include name="preconditn"/>
+          <include name="validatesignup"/>
+        </methods>
+      </class> <!-- test.ValidateSignUpPage -->
+      <class name="test.ValidateLoginPage">
+        <methods>
+          <include name="validateLoginPage"/>
+          <include name="preconditions"/>
+        </methods>
+      </class> <!-- test.ValidateLoginPage -->
+      <class name="test.ValidateHotelSearch">
+        <methods>
+          <include name="validateHotelSearchPage"/>
+          <include name="preconditions"/>
+        </methods>
+      </class> <!-- test.ValidateHotelSearch -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
